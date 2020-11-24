@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive login form with social media login buttons</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form>
+        <h1>Bejelentkezés</h1>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="" name="username" required />
+        <label for="password">Jelszó:</label>
+        <div class="container">
+            <input type="password" placeholder="" name="password" id="password" required />
+            <i class="fa fa-eye" id="togglePassword"></i>
+        </div>
+           
+        <span class="forgotPass">Elfelejtettem a jelszavam</span>
+        <button type="submit" class="login-btn">Bejelentkezés</button>
+        <p class="registration">Regisztráció</p>
+
+        <div class="seperator"><b>vagy</b></div>
+        <div class="Social">
+            <button type="submit" class="facebook-btn">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </button>
+            <button type="submit" class="twitter-btn">
+                <i class="fa fa-linkedin"></i>
+            </button>
+        </div>
+        
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
